@@ -39,9 +39,9 @@ namespace RockPaperScissors
         }
 
         /// <summary>
-        /// 
+        /// Fonction menu for console execution
         /// </summary>
-        /// <returns></returns>
+        /// <returns>Resultat boolean of the chosen option</returns>
         private static bool MainMenu()
         {
             Console.WriteLine("Choose an option:");
@@ -66,7 +66,8 @@ namespace RockPaperScissors
         }
 
         /// <summary>
-        /// 
+        /// Main method of game execution
+        /// Can be played between 2 players or one player and the computer
         /// </summary>
         private static void Play()
         {
@@ -132,7 +133,7 @@ namespace RockPaperScissors
         }
 
         /// <summary>
-        /// 
+        /// Main method to reset value of global properties
         /// </summary>
         private static void ResetValues() 
         { 
@@ -143,7 +144,7 @@ namespace RockPaperScissors
         }
 
         /// <summary>
-        /// 
+        /// Method to analyze the result of each play and determine who wins the point
         /// </summary>
         /// <param name="playerAction"></param>
         /// <param name="player2Action"></param>
@@ -170,11 +171,11 @@ namespace RockPaperScissors
         }
 
         /// <summary>
-        /// 
+        /// Function that calculates the result, according to the rules established in the game
         /// </summary>
         /// <param name="opp1"></param>
         /// <param name="opp2"></param>
-        /// <returns></returns>
+        /// <returns>Result: Tie, Player1Won, Player2Won</returns>
         public static Result CalculateResult(Action opp1, Action opp2)
         {
             switch (opp1)
@@ -221,10 +222,10 @@ namespace RockPaperScissors
         }
 
         /// <summary>
-        /// 
+        /// Function that determines the behavior of the computer game
         /// </summary>
         /// <param name="action"></param>
-        /// <returns></returns>
+        /// <returns>Action: Rock, Paper, Flamethrower, Scissors</returns>
         private static Action GetComputerAction(Action action)
         {
             if (isRandomSelectionActivate)
@@ -247,9 +248,9 @@ namespace RockPaperScissors
         }
 
         /// <summary>
-        /// 
+        /// Function that validates the selection made by the player
         /// </summary>
-        /// <returns></returns>
+        /// <returns>Action: Rock, Paper, Flamethrower, Scissors</returns>
         private static Action GetPlayerAction()
         {
             Action result;
@@ -269,9 +270,9 @@ namespace RockPaperScissors
         }
 
         /// <summary>
-        /// 
+        /// Function to hide the selection of the players and not make it visible to the other player
         /// </summary>
-        /// <returns></returns>
+        /// <returns>Player selection</returns>
         private static string ReadLine()
         {
             string selection = string.Empty;
@@ -287,9 +288,9 @@ namespace RockPaperScissors
         }
 
         /// <summary>
-        /// 
+        /// Submenu for Options choice of Main menu
         /// </summary>
-        /// <returns></returns>
+        /// <returns>Resultat boolean of the chosen option</returns>
         private static bool Options()
         {
             Console.WriteLine("Choose an option:");
@@ -314,9 +315,9 @@ namespace RockPaperScissors
         }
 
         /// <summary>
-        /// 
+        /// Function to validate the number of players entered to start the game
         /// </summary>
-        /// <returns></returns>
+        /// <returns>Number of players</returns>
         private static int ValidatePlayersNumber()
         {
             int result;
