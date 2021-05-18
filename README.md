@@ -11,3 +11,5 @@ Flamethrower, which beats paper
 Scissors, which beats flamethrower
 
 You can change the computer player behavior dans les options of main menu
+
+Please remember that the selection of each player (Rock, Paper, Flamethrower, Scissors) is hidden so that it is not visible to your opponent and the confirmation of your selection is done by means of the Enter key.
