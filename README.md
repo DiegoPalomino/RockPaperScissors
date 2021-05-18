@@ -6,6 +6,7 @@ Console project in .net core 3.1
 Can be played between 2 players or one player and the computer.
 
 Rules:
+
 Rock, which beats scissors
 Paper, which beats rock
 Flamethrower, which beats paper
