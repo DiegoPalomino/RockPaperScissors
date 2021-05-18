@@ -1,5 +1,5 @@
 # RockPaperScissors
-Technical Test equisoft 
+Technical Test Equisoft 
 Console project in .net core 3.1
 
 Can be played between 2 players or one player and the computer.
